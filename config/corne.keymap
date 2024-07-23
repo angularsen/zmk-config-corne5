@@ -1,19 +1,16 @@
 /* source key position labels */
 #include "zmk-helpers/key-labels/36.h"
+#include "zmk-helpers/unicode-chars/danish.dtsi"
 
-/* map Zen's extra keys */
-#define X_LH  &kp LGUI      // thumb row, left
-#define X_RH  &smart_mouse  // thumb row, right
+/* map Corne's extra keys */
+#define X_LH  &kp ESC  // thumb row, left
+#define X_RH  &kp TAB  // thumb row, right
 
 /* activate bluetooth */
 #define CONFIG_WIRELESS 1
 
-/* define extra thumb buttons */
-#define X_LH &kp ESC
-#define X_RH &kp TAB
-
 /* source the main keymap */
 #include "base.keymap"
 
-/* use 5-column layout for Corne 5 column */
+/* use 5-column layout for Corne 5 */
 ZMK_APPLY_MATRIX_TRANSFORM(five_column_transform)
