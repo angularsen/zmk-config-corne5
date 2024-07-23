@@ -8,6 +8,10 @@
 /* activate bluetooth */
 #define CONFIG_WIRELESS 1
 
+/* define extra thumb buttons */
+#define X_LH &kp ESC
+#define X_RH &kp TAB
+
 /* source the main keymap */
 #include "base.keymap"
 
