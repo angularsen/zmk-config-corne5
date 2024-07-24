@@ -71,6 +71,6 @@ ZMK_COMBO(fslh,  &kp FSLH,      RM2 RB2,     DEF NAV NUM, COMBO_TERM_SLOW, COMBO
 ZMK_COMBO(pipe,  &kp PIPE,      RM3 RB3,     DEF NAV NUM, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
 
 /* Norwegian letters, two handed combos except oe */
-ZMK_COMBO(cb_da_ae,  &da_ae,    LM4 RM2,     DEF, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
-ZMK_COMBO(cb_da_oe,  &da_oe,    RM4 RM2,     DEF, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-ZMK_COMBO(cb_da_ao,  &da_ao,    LM4 RM4,     DEF, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
+ZMK_COMBO(da_ae,  &da_ae,    LM4 RM2,     DEF, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
+ZMK_COMBO(da_oe,  &da_oe,    RM4 RM2,     DEF, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(da_ao,  &da_aa,    LM4 RM4,     DEF, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
