@@ -1,6 +1,5 @@
 /* source key position labels */
 #include "zmk-helpers/key-labels/36.h"
-#include "zmk-helpers/unicode-chars/danish.dtsi"
 
 /* map Corne's extra keys */
 #define X_LH  &kp ESC  // thumb row, left

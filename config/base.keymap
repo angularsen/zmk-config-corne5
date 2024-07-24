@@ -10,6 +10,7 @@
 #include "zmk-helpers/helper.h"
 #include "zmk-helpers/unicode-chars/greek.dtsi"
 #include "zmk-helpers/unicode-chars/german.dtsi"
+#include "zmk-helpers/unicode-chars/danish.dtsi"
 
 #define DEF 0
 #define NAV 1
