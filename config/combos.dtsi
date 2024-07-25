@@ -53,8 +53,8 @@ ZMK_COMBO(gt,    &kp GT,        RM3 RM4,     DEF     NUM, COMBO_TERM_FAST, COMBO
 ZMK_COMBO(lt2,   &kp LT,        RM1 RM2,         NAV    , COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(gt2,   &kp GT,        RM2 RM3,         NAV    , COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
-ZMK_COMBO(lbrc,  &kp &lbrc_bkt, RB1 RB2,     DEF     NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST) // { and [, inverse shift behavior
-ZMK_COMBO(rbrc,  &kp &rbrc_bkt, RB2 RB3,     DEF     NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST) // } and ], inverse shift behavior
+ZMK_COMBO(lbrc,  &lbrc_bkt,     RB1 RB2,     DEF     NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST) // { and [, inverse shift behavior
+ZMK_COMBO(rbrc,  &rbrc_bkt,     RB2 RB3,     DEF     NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST) // } and ], inverse shift behavior
 ZMK_COMBO(lbrc2, &kp LBRC,      RB1 RB2,         NAV    , COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(rbrc2, &kp RBRC,      RB2 RB3,         NAV    , COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
