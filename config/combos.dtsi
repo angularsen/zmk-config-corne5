@@ -11,11 +11,12 @@
 Modifications to urob defaults:
 - Move ~ from LM0 LB0 to LT4 LM4
 - Move | from RM3 RB3 to LM4 LB4
-- Move / from RM2 RB2 to RM4 RB4
+- Move / from RM2 RB2 to RB4, shift for ? as default
 - Move = from LM1 LB1 to RT4 RM4
-- Add  < to RM0 RM1
-- Add  > to RM3 RM4
-- Invert shift for {} and [], braces more frequently used in coding
+- Move ! from shift RB4 to RM4 RB4
+- Move {} to RM0 RM1 and RM3 RM4, [] on shift (previously shift [], inverted since braces are more frequently used in c# coding)
+- Move <> to RB1 RB2 and RB2 RB3, previously shift ()
+- Add context menu to LM0 LB0
 */
 
 #define COMBO_TERM_FAST 18
@@ -68,6 +69,7 @@ ZMK_COMBO(prcnt, &kp PRCNT,     LT0 LM0,     DEF NAV NUM, COMBO_TERM_SLOW, COMBO
 ZMK_COMBO(pipe,  &kp PIPE,      LM4 LB4,     DEF NAV NUM, COMBO_TERM_SLOW, COMBO_IDLE_SLOW) // A+Z = |
 ZMK_COMBO(grave, &kp GRAVE,     LM3 LB3,     DEF NAV NUM, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
 ZMK_COMBO(bslh,  &kp BSLH,      LM2 LB2,     DEF NAV NUM, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
+ZMK_COMBO(cmenu, &kp K_CMENU,   LM0 LB0,     DEF NAV NUM, COMBO_TERM_SLOW, COMBO_IDLE_SLOW) // D+B = context menu
 
 
 /* Vertical combos - right hand */
