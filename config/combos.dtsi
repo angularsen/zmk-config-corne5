@@ -30,6 +30,7 @@ Modifications to urob defaults:
 #define HRC_LPAR   &hmr_lpar_lt RS(LCTRL) 0
 #define HRC_RPAR   &hmr_rpar_gt RS(LALT) 0
 
+
 /* Horizontal combos - left hand */
 ZMK_COMBO(esc,   &kp ESC,       LT3 LT2,     DEF NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(ret,   &kp RETURN,    LT2 LT1,     DEF NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
@@ -42,22 +43,19 @@ ZMK_COMBO(cut,   &kp LC(X),     LB3 LB1,     DEF NAV NUM, COMBO_TERM_FAST, COMBO
 ZMK_COMBO(copy,  &kp LC(INS),   LB3 LB2,     DEF NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(paste, &kp LS(INS),   LB2 LB1,     DEF NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
+
 /* Horizontal combos - right hand */
 ZMK_COMBO(bspc,  &kp BSPC,      RT1 RT2,     DEF NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(del,   &kp DEL,       RT2 RT3,     DEF NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(equal, &kp EQUAL,     RT3 RT4,     DEF NAV NUM, COMBO_TERM_SLOW, COMBO_IDLE_SLOW) // Y+' = =
 
-ZMK_COMBO(lt,    &kp LT,        RM0 RM1,     DEF     NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST) // h+n = <
+ZMK_COMBO(lbrc,  &lbrc_bkt,     RM0 RM1,     DEF     NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST) // { and [, inverse shift behavior
 ZMK_COMBO(lpar,  HRC_LPAR,      RM1 RM2,     DEF     NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(rpar,  HRC_RPAR,      RM2 RM3,     DEF     NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-ZMK_COMBO(gt,    &kp GT,        RM3 RM4,     DEF     NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST) // i+o = >
-ZMK_COMBO(lt2,   &kp LT,        RM1 RM2,         NAV    , COMBO_TERM_FAST, COMBO_IDLE_FAST)
-ZMK_COMBO(gt2,   &kp GT,        RM2 RM3,         NAV    , COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(rbrc,  &rbrc_bkt,     RM3 RM4,     DEF     NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST) // } and ], inverse shift behavior
 
-ZMK_COMBO(lbrc,  &lbrc_bkt,     RB1 RB2,     DEF     NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST) // { and [, inverse shift behavior
-ZMK_COMBO(rbrc,  &rbrc_bkt,     RB2 RB3,     DEF     NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST) // } and ], inverse shift behavior
-ZMK_COMBO(lbrc2, &kp LBRC,      RB1 RB2,         NAV    , COMBO_TERM_FAST, COMBO_IDLE_FAST)
-ZMK_COMBO(rbrc2, &kp RBRC,      RB2 RB3,         NAV    , COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(lt,    &kp LT,        RB1 RB2,     DEF     NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST) // h+n = <
+ZMK_COMBO(gt,    &kp GT,        RB2 RB3,     DEF     NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST) // i+o = >
 
 ZMK_COMBO(grk,   &sl UC,        RT1 RT3,     DEF NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(cpgrk, &sls 0,        RT1 RT2 RT3, DEF NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
@@ -73,6 +71,7 @@ ZMK_COMBO(pipe,  &kp PIPE,      LM4 LB4,     DEF NAV NUM, COMBO_TERM_SLOW, COMBO
 ZMK_COMBO(grave, &kp GRAVE,     LM3 LB3,     DEF NAV NUM, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
 ZMK_COMBO(bslh,  &kp BSLH,      LM2 LB2,     DEF NAV NUM, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
 
+
 /* Vertical combos - right hand */
 ZMK_COMBO(caret, &kp CARET,     RT0 RM0,     DEF NAV NUM, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
 ZMK_COMBO(plus,  &kp PLUS,      RT1 RM1,     DEF NAV NUM, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
@@ -83,6 +82,7 @@ ZMK_COMBO(dqt,   &kp DQT,       RT4 RM4,     DEF NAV NUM, COMBO_TERM_SLOW, COMBO
 ZMK_COMBO(under, &kp UNDER,     RM0 RB0,     DEF NAV NUM, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
 ZMK_COMBO(minus, &kp MINUS,     RM1 RB1,     DEF NAV NUM, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
 ZMK_COMBO(fslh,  &kp FSLH,      RM4 RB4,     DEF NAV NUM, COMBO_TERM_SLOW, COMBO_IDLE_SLOW) // O+? = /
+
 
 /* Norwegian letters, two handed combos except oe */
 ZMK_COMBO(combo_da_ae,  &da_ae,    LM4 RM2,     DEF NAV NUM, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
