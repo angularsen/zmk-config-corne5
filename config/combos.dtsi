@@ -57,8 +57,6 @@ ZMK_COMBO(rbrc,  &rbrc_bkt,     RM3 RM4,     DEF     NUM, COMBO_TERM_FAST, COMBO
 ZMK_COMBO(lt,    &kp LT,        RB1 RB2,     DEF     NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST) // h+n = <
 ZMK_COMBO(gt,    &kp GT,        RB2 RB3,     DEF     NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST) // i+o = >
 
-ZMK_COMBO(grk,   &sl UC,        RT1 RT3,     DEF NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-ZMK_COMBO(cpgrk, &sls 0,        RT1 RT2 RT3, DEF NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
 /* Vertical combos - left hand */
 ZMK_COMBO(tilde, &kp TILDE,     LT4 LM4,     DEF NAV NUM, COMBO_TERM_SLOW, COMBO_IDLE_SLOW) // Q+A = ~
