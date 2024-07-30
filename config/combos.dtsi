@@ -7,19 +7,6 @@
   ╰───────╮ LH2 LH1 LH0 │ │ RH0 RH1 RH2 ╭───────╯
           ╰─────────────╯ ╰─────────────╯ */
 
-/*
-Modifications to urob defaults:
-- Move ~ from LM0 LB0 to LT4 LM4
-- Move | from RM3 RB3 to LM4 LB4
-- Move / from RM2 RB2 to RB4, shift for ? as default
-- Move = from LM1 LB1 to RT4 RM4
-- Move ! from shift RB4 to RM4 RB4
-- Move {} to RM0 RM1 and RM3 RM4, [] on shift (previously shift [], inverted since braces are more frequently used in c# coding)
-- Move <> to RB1 RB2 and RB2 RB3, previously shift ()
-- Add context menu to LM0 LB0
-- Add macro != to RT2 RT3 RT4
-*/
-
 #define COMBO_TERM_FAST 18
 #define COMBO_TERM_SLOW 30
 
