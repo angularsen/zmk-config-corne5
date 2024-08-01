@@ -14,6 +14,11 @@ Corne5 ZMK config by angularsen
 - Add macro `!=` to RT2 RT3 RT4
 
 ### Layouts
+#### Num layer
+- Add +-*/. to right hand (could not type dot '.' with sticky/word num layer)
+- Add , to left hand
+
+#### Function layer
 - Add print screen to RM4
 
 ### Other
