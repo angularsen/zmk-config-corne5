@@ -237,7 +237,7 @@ ZMK_MACRO(noteq,
 
 /* Keymap */
 
-// ZMK_CONDITIONAL_LAYER(FN NUM, SYS)  // FN + NUM --> SYS
+ZMK_CONDITIONAL_LAYER(FN NAV, SYS) // FN + NAV --> SYS
 ZMK_CONDITIONAL_LAYER(FN NUM, UC)  // FN + NUM --> UC (unicode layer)
 
 ZMK_LAYER(base,
